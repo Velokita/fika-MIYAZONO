@@ -1,3 +1,6 @@
 FIKA definition
 [fee-ka] Swedish
 (nound)a moment to slow down and appreciate the good things in life.
+
+
+Desarrollarás el front end de una tienda online con carrito de compras, utilizando los componentes React y Firebase como servidor en la nube. Crearás así una experiencia de usuario amigable con actualizaciones visuales instantáneas y código escalable.
