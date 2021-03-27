@@ -1,0 +1,13 @@
+.NavBarItems{
+    background-color: blueviolet;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-log{
+    color: burlywood;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+}
