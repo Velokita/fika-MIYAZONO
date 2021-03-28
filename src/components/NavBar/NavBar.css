@@ -43,7 +43,7 @@
 }
 
 .fa-bars{
-    color: blue;
+    color: #fff;    
 }
 
 .nav-links-mobile{
@@ -58,6 +58,7 @@
     .NavBarItems{
         position: relative;
     }
+
     .nav-menu{
         display: flex;
         flex-direction: column;
@@ -65,10 +66,11 @@
         height: 500px;
         position: absolute;
         top: 80px;
-        left: 0;
+        left: -100%;
         opacity: 1;
         transition:  all 0.5s ease;
     }
+
     .nav-menu.active{
         background:#6668f4;
         left: 0;
@@ -76,33 +78,38 @@
         transition: all 0.5s ease;
         z-index: 1;
     }
+
     .nav-links{
         text-align: center;
         padding: 2rem;
         width: 100%;
         display: table;
     }
+
     .nav-links:hover{
         background-color: #7577fa;
         border: radius 0;
     }
+
     .navbar-logo{
         position: absolute;
         top: 0;
         left: 0;
         transform: translate(25%,50%);
     }    
+
     .menu-icon{
         display: block;
         position: absolute;
         top: 0;
-        left: 0;
-        transform: translate(25%,60%);
+        right: 0;
+        transform: translate(-100%,60%);
         font-size: 1.8rem;
         cursor: pointer;
     }
+
     .fa-times{
-        color: red;
+        color: #fff;
         font-size: 2rem;
     }
 
@@ -118,12 +125,15 @@
         color: #fff;
         font-size: 1.5rem;
     }
+
     .nav-links-mobile:hover{
         background: #fff;
         color:#6568f4;
         transition: 250ms;
     }
+
     Button{
         display: none;
     }
+
 }
