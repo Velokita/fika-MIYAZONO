@@ -1,8 +1,8 @@
-:root{
+:root {
     --primary: #3acbf7;
 }
 
-.btn{
+.btn {
     padding: 8px 20px;
     border-radius: 4px;
     outline: none;
@@ -10,15 +10,15 @@
     cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover {
     padding: 8px 20px;
-    transition: all  0.3s ease-out;
+    transition: all 0.3s ease-out;
     background: #fff;
     color: #6568f4;
     transition: 250ms;
 }
 
-.btn--primary{
+.btn--primary {
     background-color: var(--primary);
 }
 
@@ -31,15 +31,15 @@
     transition: all 0.3s ease-out;
 }
 
-.bt--medium{
-    padding:  8px 20px;
+.bt--medium {
+    padding: 8px 20px;
     border-radius: 4px;
     font-size: 18px;
     color: #fff;
 }
 
-.btn--large{
-    padding:  12px 26px;
+.btn--large {
+    padding: 12px 26px;
     border-radius: 4px;
     font-size: 20px;
     color: #fff;
