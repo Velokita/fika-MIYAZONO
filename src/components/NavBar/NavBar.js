@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Button } from "./Button";
 import { MenuItems } from "./MenuItems";
+import { CartWidget } from "../CartWidget/CartWidget"
+
 import "./NavBar.css";
 
 class NavBar extends Component {
@@ -37,7 +39,8 @@ class NavBar extends Component {
             );
           })}
         </ul>
-        <Button> Mi Carrito </Button>
+        <Button> <CartWidget/> </Button>
+        
       </nav>
     );
   }

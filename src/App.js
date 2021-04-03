@@ -1,13 +1,22 @@
-import React from 'react';
-import NavBar from './components/NavBar';
+import React, { Component } from 'react'
+import NavBar from './components/NavBar/NavBar';
+import Footer from './components/Footer/Footer';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-     <NavBar/>
+class App extends Component  {
+  render(){
+  return (  
+    <div className="App">     
+     <NavBar/>       
+     <ItemListContainer mensaje="Tomate un Break con "/>
+     <Footer/>  
     </div>
+    
+    
   );
+}
 }
 
 export default App;
