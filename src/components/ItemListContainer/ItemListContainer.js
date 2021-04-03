@@ -8,11 +8,11 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 
 import "./ItemListContainer.css";
 
-function ItemListContainer({mensaje}) {
+function ItemListContainer({greeting}) {
     return (    
         <Jumbotron fluid>
             <Container>
-            <h2 className="titulo">{mensaje}</h2>
+            <h2 className="titulo">{greeting}</h2>
             <Row>
                 <Col xs={6} md={4}>
                         <Image src={imagen} rounded />
