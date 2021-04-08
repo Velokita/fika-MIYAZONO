@@ -5,7 +5,6 @@ import {Row, Col, Image, Jumbotron, Container} from 'react-bootstrap';
  
 import "./ItemListContainer.css";
 
-
 function ItemListContainer({greeting, imagen}) {
     return (    
         <Jumbotron fluid>

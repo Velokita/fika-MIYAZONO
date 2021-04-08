@@ -8,9 +8,6 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import './App.css';
 
 class App extends Component  {
-  handleClick = () => {
-    alert('Me hiciste click!');
-  };
 
   render(){
   return (  
@@ -19,7 +16,7 @@ class App extends Component  {
      <ItemListContainer mensaje="Tomate un Break con " imagen="./images/fikaDrink.png"/>
      <ItemUI name="Fika Tropical Mango"
             img="./images/fikaShake.jpg"
-            stock="10"
+            stock="2"
             about="Licuado de de Mango, Banana y leche de coco."
             action="{this.handleClick}"/>
      <Footer/>  
