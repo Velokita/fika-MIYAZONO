@@ -39,7 +39,7 @@ class NavBar extends Component {
             );
           })}
         </ul>
-        <Button> <CartWidget/> </Button>
+        <Button>Mi Carrito <CartWidget/> </Button>
         
       </nav>
     );

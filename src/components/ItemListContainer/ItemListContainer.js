@@ -1,14 +1,11 @@
-import React from 'react'
-import imagen from './fikaDrink.png'; 
-import Image from 'react-bootstrap/Image'
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Jumbotron from 'react-bootstrap/Jumbotron';
-
+import React from 'react' 
+//import componentes
+//Import componentes externos
+import {Row, Col, Image, Jumbotron, Container} from 'react-bootstrap';
+ 
 import "./ItemListContainer.css";
 
-function ItemListContainer({greeting}) {
+function ItemListContainer({greeting, imagen}) {
     return (    
         <Jumbotron fluid>
             <Container>
