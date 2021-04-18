@@ -5,7 +5,7 @@ export default class ItemCount extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 0,      
+      count: 1,      
       
     };
   }
@@ -14,7 +14,7 @@ export default class ItemCount extends Component {
     if( this.state.count < this.props.stock) 
         this.setState({ count: this.state.count + 1 });        
         else{ 
-            console.log ("Llegó al limite de stock disponible. " + this.props.stock);
+            alert("No Puede continuar agregando más cantidad.\nLlegó al limite de stock disponible. " + this.props.stock);
            
         }  
   };

@@ -1,3 +1,10 @@
+Proyecto Coderhouse 13205-2021:
+Se trata de un sitio web para ordenar items de cafetería donde lo principal es la pasteleria artersanal.
+Utilicé dependencias extras para facilitar el look&feel.
+1-react-bootstrap
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
