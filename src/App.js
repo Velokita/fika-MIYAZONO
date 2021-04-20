@@ -2,6 +2,8 @@ import React, { Component } from "react";
 /**Componentes */
 import Navigation from "./components/NavBar/Navigation";
 import Footer from "./components/Footer/Footer";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "./components/ItemListContainer/ItemDetailContainer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 /**Vistas */
 import Home from "./views/Home/Home";
@@ -21,11 +23,14 @@ class App extends Component {
           <Switch>
             <Route path="/" exact component={Home}></Route>
             <Route path="/catalogo" component={Catalogo}></Route>
+            <Route exact component={ItemDetailContainer} path="/product/:id" />
+            <Route component={ItemListContainer} path="/category/:categoryId" />
+
             <Route path="/about" component={About}></Route>
             <Route path="/contact" component={Contact}></Route>
             <Route path="/my-cart" component={MyCart}></Route>
           </Switch>
-          
+
           <Footer />
         </div>
       </Router>
