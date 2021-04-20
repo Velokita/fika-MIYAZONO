@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useParams } from "react";
+import React, { useEffect, useState } from "react";
 //import componentes
 import ItemList from "../Item/ItemList";
 import { Data } from "../../utils/Data";

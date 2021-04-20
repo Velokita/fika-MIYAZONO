@@ -1,6 +1,6 @@
 import React from 'react'
 //Import componentes externos
-import { Row, Col, Image, Jumbotron, Container } from "react-bootstrap";
+import { Row, Col, Image } from "react-bootstrap";
 
 function Home() {
     return (
