@@ -1,16 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useParams } from "react";
 //import componentes
 import ItemList from "../Item/ItemList";
 import { Data } from "../../utils/Data";
 
 //Import componentes externos
 import { Row, Col, Image, Jumbotron, Container } from "react-bootstrap";
+import Spinner from 'react-bootstrap/Spinner'
 
 import "./ItemListContainer.css";
 
 function ItemListContainer({ greeting, imagen }) {
-  const [itemList, setItems] = useState([]);
+  const [itemList, setItems] = useState([]); 
 
+  
   useEffect(() => {
     setTimeout(() => {
       setItems(Data);
@@ -27,7 +29,9 @@ function ItemListContainer({ greeting, imagen }) {
           </Col>
         </Row>
         {itemList.length < 1 ? (
-          <h1>Cargando...</h1>
+          <Spinner animation="border" role="status">
+          <span className="sr-only">Cargando...</span>
+        </Spinner>
         ) : (
           <ItemList items={itemList} />
         )}
