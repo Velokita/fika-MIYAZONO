@@ -5,7 +5,7 @@ function Contact() {
   return (
     <Jumbotron>
       <header>
-        <h2>Contáctanos ... Envianos tu mensaje...</h2>
+        <h2>Contáctanos ... Envianos tu mensaje, y te responderemos a la brevedad...</h2>
       </header>
       <Container>
         <Form>
