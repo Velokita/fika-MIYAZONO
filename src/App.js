@@ -2,8 +2,6 @@ import React, { Component } from "react";
 /**Componentes */
 import Navigation from "./components/NavBar/Navigation";
 import Footer from "./components/Footer/Footer";
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
-import ItemDetailContainer from "./components/ItemListContainer/ItemDetailContainer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 /**Vistas */
 import Home from "./views/Home/Home";
