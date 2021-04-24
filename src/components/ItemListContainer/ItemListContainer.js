@@ -8,16 +8,18 @@ import { Row, Col, Image, Jumbotron, Container } from "react-bootstrap";
 import Spinner from 'react-bootstrap/Spinner'
 
 import "./ItemListContainer.css";
+import { useParams } from "react-router";
 
 function ItemListContainer({ greeting, imagen }) {
   const [itemList, setItems] = useState([]); 
-
+  const {categoryid} = useParams();
   
   useEffect(() => {
     setTimeout(() => {
       setItems(Data);
     }, 3000);
-  }, []);
+  }, [categoryid]);
+ 
 
   return (
     <Jumbotron fluid>
@@ -33,7 +35,7 @@ function ItemListContainer({ greeting, imagen }) {
           <span className="sr-only">Cargando...</span>
         </Spinner>
         ) : (
-          <ItemList items={itemList} />
+          <ItemList items={itemList}/>
         )}
       </Container>
     </Jumbotron>

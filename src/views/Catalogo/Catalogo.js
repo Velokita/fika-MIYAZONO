@@ -8,7 +8,7 @@ function Catalogo() {
     <>
     <Jumbotron fluid>
       <Container>
-      <ItemListContainer />
+      <ItemListContainer greeting='Hola Mundo' imagen=''/>
       </Container>
       </Jumbotron>
     </>

@@ -17,11 +17,12 @@ class Navigation extends Component {
           <Nav className="nav-menu">
           <Nav.Link href="/">Inicio</Nav.Link> 
             <NavDropdown title="Catálogo" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="/catalogo">Todo</NavDropdown.Item>
+              <NavDropdown.Item href="/catalogo/todo">Ver Todo</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.2">Bebidas</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Dulces y Salados</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">Combos</NavDropdown.Item>
+              <NavDropdown.Item href="/catalogo/bebidas">Bebidas</NavDropdown.Item>
+              <NavDropdown.Item href="/catalogo/dulces">Dulces</NavDropdown.Item>
+              <NavDropdown.Item href="/catalogo/salados">Salados</NavDropdown.Item>
+              <NavDropdown.Item href="/catalogo/combos">Combos</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/about">Nuestra Historia</Nav.Link> 
             <Nav.Link href="/contact">Contacto</Nav.Link> 

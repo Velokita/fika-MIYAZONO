@@ -1,4 +1,5 @@
 import React from "react";
+import { useParams } from "react-router";
 //import componentes
 import Item from "./Item";
 
@@ -12,9 +13,17 @@ Implementa un async mock (promise): Usa un efecto de montaje para poder
    */
 
 const ItemList = ({ items }) => {
+  const { categoryid } = useParams();
+  console.log("Categoria seleccionada: ", categoryid);
+
+  let itemsCat = items;
+  if (categoryid !== "todo") {
+    itemsCat = items.filter((item) => item.category === categoryid);
+    console.log("itemsCat: ", itemsCat);
+  }
   return (
     <>
-      {items.map((item) => (
+      {itemsCat.map((item) => (
         <Item key={item.id} item={item} />
       ))}
     </>
