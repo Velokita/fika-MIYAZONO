@@ -10,10 +10,10 @@ import Spinner from 'react-bootstrap/Spinner'
 import "./ItemListContainer.css";
 import { useParams } from "react-router";
 
-function ItemListContainer({ greeting, imagen }) {
+function ItemListContainer({ greeting, imagen, onAdd }) {
   const [itemList, setItems] = useState([]); 
   const {categoryid} = useParams();
-  
+
   useEffect(() => {
     setTimeout(() => {
       setItems(Data);

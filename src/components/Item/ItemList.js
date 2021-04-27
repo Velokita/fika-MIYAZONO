@@ -19,7 +19,7 @@ const ItemList = ({ items }) => {
   let itemsCat = items;
   if (categoryid !== "todo") {
     itemsCat = items.filter((item) => item.category === categoryid);
-    console.log("itemsCat: ", itemsCat);
+    //console.log("itemsCat: ", itemsCat);
   }
   return (
     <>
