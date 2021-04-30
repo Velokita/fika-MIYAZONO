@@ -1,4 +1,4 @@
-import React, { useEffect, useState , useContext} from "react";
+import React, { useEffect, useState } from "react";
 //import componentes
 import ItemList from "../Item/ItemList";
 import { Data } from "../../utils/Data";
@@ -17,7 +17,7 @@ function ItemListContainer({ greeting, imagen }) {
   useEffect(() => {
     setTimeout(() => {
       setItems(Data);
-    }, 3000);
+    }, 2000);
   }, [categoryid]);
  
 

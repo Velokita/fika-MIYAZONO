@@ -1,4 +1,4 @@
-import React, { Component, useContext } from "react";
+import React, { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 
 export function CartWidget ()  {
@@ -12,7 +12,7 @@ console.log("cartWidget", products)
       <div>
         <i className="fas fa-shopping-cart" placeholder="Mi Carrito">
           
-          ({ products.length })
+          ({ products.cartSize })
           </i> 
         
         

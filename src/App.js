@@ -1,4 +1,4 @@
-import React, { Component, useContext} from "react";
+import React, { Component} from "react";
 /**Componentes */
 import Navigation from "./components/NavBar/Navigation";
 import Footer from "./components/Footer/Footer";
@@ -15,9 +15,7 @@ import {CartProvider} from "./context/CartContext";
 import "./App.css";
 
 class App extends Component{
-  constructor(props){
-    super(props);
-  }
+ 
   render(){
   return (
     <CartProvider>
