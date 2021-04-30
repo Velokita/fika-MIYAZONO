@@ -13,7 +13,7 @@ export const CartProvider = (props) => {
 
   const clearCart = () => {
     // Remover todos los items
-    setCartItems = [];
+    setCartItems([]);
   };
 
   const removeItem = (itemId) => {
