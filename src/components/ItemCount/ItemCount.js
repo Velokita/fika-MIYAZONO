@@ -1,16 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Button, InputGroup, FormControl } from "react-bootstrap";
+import { CartContext } from "../../context/CartContext";
 
-export default function ItemCount({item, onAdd}) {    
+export default function ItemCount({item}) {    
 
   const [counter, setCounter] = useState(0);
 
-  // const onAddItem = () => { // agregar cierta cantidad de un ítem al carrito
-  //   product.quantity=counter;
-  //    setProduct(product);
-  //    onAdd(...cart, product)
-  // };
+  const value = useContext(CartContext);
 
+  const addToCart = value.onAdd;
+ 
   const handleIncrement = () => { 
      (counter < item.stock) ? setCounter(counter + 1) :
       alert("No Puede continuar agregando más cantidad.\nLlegó al limite de stock disponible "
@@ -42,7 +41,7 @@ export default function ItemCount({item, onAdd}) {
           </InputGroup.Append>
         </InputGroup>
         { counter > 0 &&
-          <Button variant="info" onClick={onAdd} >Agregar al Carrito</Button>
+          <Button variant="info" onClick={() => addToCart(item, counter)}>Agregar al Carrito</Button>
         }
       </div>
     );

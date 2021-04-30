@@ -8,13 +8,14 @@ import ItemDetail from "./ItemDetail";
 import { Card, Button } from "react-bootstrap";
 /** Componente Item  */
 
-const Item = ({ item, onAdd }) => {
+const Item = ({ item }) => {
   const [flag, setFlag] = useState(false);
  
   const handleDetail = () => {
     setFlag(!flag);
   };
     
+
   return (
     <div className="Cards">
       <Card border="secondary" style={{ width: "18rem" }} id={item.id}>
@@ -24,7 +25,7 @@ const Item = ({ item, onAdd }) => {
             {flag ? "Ocultar Detalle" : "Ver Detalle"}
           </Button>
           {flag === true && <ItemDetail item={item} />}
-          <ItemCount item={item}  onAdd={onAdd}/>
+          <ItemCount item={item} />
         </Card.Body>
       </Card>
     </div>

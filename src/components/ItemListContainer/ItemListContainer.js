@@ -1,19 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState , useContext} from "react";
 //import componentes
 import ItemList from "../Item/ItemList";
 import { Data } from "../../utils/Data";
 
 //Import componentes externos
+import { useParams } from "react-router";
 import { Row, Col, Image, Jumbotron, Container } from "react-bootstrap";
 import Spinner from 'react-bootstrap/Spinner'
 
 import "./ItemListContainer.css";
-import { useParams } from "react-router";
 
-function ItemListContainer({ greeting, imagen, onAdd }) {
+function ItemListContainer({ greeting, imagen }) {
   const [itemList, setItems] = useState([]); 
   const {categoryid} = useParams();
-
+ 
   useEffect(() => {
     setTimeout(() => {
       setItems(Data);

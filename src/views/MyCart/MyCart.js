@@ -1,14 +1,16 @@
-import React from "react";
-import {Jumbotron, Container, Alert} from 'react-bootstrap'
+import React , { useContext } from "react";
+import { Jumbotron, Container, Alert } from 'react-bootstrap'
 import ShoppingCart from "../../components/ShoppingCart/ShoppingCart";
+import { CartContext } from "../../context/CartContext";
 
-function MyCart({ cartItems, onAdd }) { 
- 
+const MyCart = () => { 
+   const  value = useContext(CartContext)
+
   return (
     <Jumbotron>
       <Container>         
-      {cartItems.length > 0  ?(
-      <ShoppingCart onAdd={onAdd} cartItems={cartItems}/>
+      {value.cartItems.length > 0  ?(
+      <ShoppingCart onAdd={value.onAdd} cartItems={value.cartItems}/>
       ) : (
         <Alert variant="danger">
         <Alert.Heading>Tu carrito está vacío!</Alert.Heading>
