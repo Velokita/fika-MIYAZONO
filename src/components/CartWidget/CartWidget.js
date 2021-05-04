@@ -1,24 +1,18 @@
 import React, { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 
-export function CartWidget ()  {
+export function CartWidget() {
+  const value = useContext(CartContext); 
   
-const value = useContext(CartContext);
-const [products] = value.products;
-
-console.log("cartWidget", products)
+  const countCartItems =  value.countCartItems;
   
-    return (
-      <div>
-        <i className="fas fa-shopping-cart" placeholder="Mi Carrito">
-          
-          ({ products.cartSize })
-          </i> 
-        
-        
-      </div>
-    );
- 
+  return (
+    <div>
+      <i className="fas fa-shopping-cart" placeholder="Mi Carrito" >
+        ({ countCartItems})
+      </i>
+    </div>
+  );
 }
 
 export default CartWidget;

@@ -6,13 +6,15 @@ export default function ItemCount({item}) {
 
   const [counter, setCounter] = useState(0);
 
-  const value = useContext(CartContext);
+  const value= useContext(CartContext);
 
   const addToCart = value.onAdd;
- 
-  const handleIncrement = () => { 
-     (counter < item.stock) ? setCounter(counter + 1) :
-      alert("No Puede continuar agregando más cantidad.\nLlegó al limite de stock disponible "
+  const totalCartItems = value.checkQtyCartItem;
+  
+   const handleIncrement = () => { 
+     ( counter < item.stock ) 
+     ? setCounter(counter + 1) :
+      alert("ItemCount-No Puede continuar agregando más cantidad.\nLlegó al limite de stock disponible "
        + item.stock);
     } 
 

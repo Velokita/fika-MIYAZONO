@@ -8,7 +8,7 @@ import Home from "./views/Home/Home";
 import Contact from "./views/Contact/Contact";
 import About from "./views/About/About";
 import Catalogo from "./views/Catalogo/Catalogo";
-import MyCart from "./views/MyCart/MyCart";
+import MyCart from "./views/Cart/Cart";
 /**Context */
 import {CartProvider} from "./context/CartContext";
 /**Estilos */

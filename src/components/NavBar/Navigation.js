@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Navbar, NavDropdown, Nav, Container } from "react-bootstrap";
 
-import CartWidget from '../CartWidget/CartWidget'
+import CartWidget from '../CartWidget/CartWidget' 
 import "./NavBar.css";
 
 class Navigation extends Component {
@@ -46,7 +46,7 @@ class Navigation extends Component {
                 <Nav.Link href="/about">Nuestra Historia</Nav.Link>
                 <Nav.Link href="/contact">Contacto</Nav.Link>
                 <Nav.Link href="/my-cart">
-                  <CartWidget />
+                  <CartWidget /> 
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>
