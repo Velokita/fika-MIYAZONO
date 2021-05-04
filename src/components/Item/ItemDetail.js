@@ -16,7 +16,7 @@ function ItemDetail({ item }) {
   
   return (
     <>
-      <Card.Img variant="top" src={formatImgResource(item.img)} width={150} height={250} />
+      <Card.Img variant="top" src={item.img} width={150} height={250} />
       <Card.Text>{item.detail} </Card.Text>
       <Card.Text>{item.price} </Card.Text>
     </>
