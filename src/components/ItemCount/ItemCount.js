@@ -9,7 +9,7 @@ export default function ItemCount({item}) {
   const value= useContext(CartContext);
 
   const addToCart = value.onAdd;
-  const totalCartItems = value.checkQtyCartItem;
+  //const totalCartItems = value.checkQtyCartItem;
   
    const handleIncrement = () => { 
      ( counter < item.stock ) 

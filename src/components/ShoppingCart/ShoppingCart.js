@@ -5,8 +5,8 @@ const ShoppingCart = () => {
   const value = useContext(CartContext);
   const productos = value.products;
   console.log( "Shopping productos", productos);
-  const countCartItems =  value.countCartItems;
-  const total =  value.totalPrice;
+  // const countCartItems =  value.countCartItems;
+  // const total =  value.totalPrice;
 
   return (
     <div>

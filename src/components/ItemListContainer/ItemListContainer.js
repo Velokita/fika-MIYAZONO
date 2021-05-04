@@ -21,9 +21,9 @@ function ItemListContainer({ greeting, imagen }) {
   }, [categoryid]);
  */
   // Es un evento asyncrono, por lo que utilizamos async await
-  const dataLoad = async (itemObject) => {
-    await Data.collection("items").doc().set(itemObject);
-  };
+  // const dataLoad = async (itemObject) => {
+  //   await Data.collection("items").doc().set(itemObject);
+  // };
 
   const getItems = async () => {
     Data.collection("items").onSnapshot((querySnapshot) => {
