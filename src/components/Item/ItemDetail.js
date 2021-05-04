@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 
-import { formatImgResource } from "../../utils/Utils";
 //Import componentes externos
 import { Card } from "react-bootstrap";
 
